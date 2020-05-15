@@ -75,14 +75,14 @@ So, roughtly speaking $Complexity \propto f(n)$ : where $O(f(n))$
 
 ### 4 Basic Data Structures
 
-- Array: a sequence of data with fixed length. the size can't be dynamically modified. And all the data inside an array has to be the same type.  
+- **Array**: a sequence of data with fixed length. the size can't be dynamically modified. And all the data inside an array has to be the same type.  
 <img src="data/image/Array.jpeg" alt="Array" width=500>
 arrays are stored contiguously in memory
-- Linked List: a collection of data connected linearly with one another, which says that each element is connected only to next or previous element, and there aren't nodes that point to multiple nodes and nodes that are pointed by more than two nodes
+- **Linked List**: a collection of data connected linearly with one another, which says that each element is connected only to next or previous element, and there aren't nodes that point to multiple nodes and nodes that are pointed by more than two nodes
 <img src="data/image/LinkedList.jpeg" alt="LinkedList" width=500>
 those nodes can be linked to both sides, which is a doubly linked list.
 <img src="data/image/DoubleLinkedList.jpeg" alt="DoubleLinkedList" width=500>
-- Hash Table: a container of data accessible by keys instead of indices. Hash table can take key and value strucure. 
+- **Hash Table**: a container of data accessible by keys instead of indices. Hash table can take key and value strucure.
 Conceptually, Hash table can be thought of as an unordered collection of data in which you can search a key with O(1) like below:
 <img src="data/image/HashTableSimplified.jpeg" alt="HashTableSimplified" width=500>
 In its implimentation, it employs a hash function. The hash function translates a key into the corresponding index($f:key\to index$: like below) so that it doesn't have to check with all the elements. Thus the time complexity of searching is idially reduced to O(1). (However, that could be O(n) if there is a collisoin in worst case, but we can leave that out in usual contexts)
